@@ -303,10 +303,10 @@ button { font: inherit; color: inherit; }
   background: repeating-linear-gradient(90deg, var(--peach) 0 10px, #F7B49C 10px 12px);
   transition: width 1.6s cubic-bezier(.2,.8,.2,1);
 }
-.levels { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(5, 1fr); gap: 16px; }
+.levels { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(5, 1fr); gap: 20px; }
 .level {
-  position: relative; display: flex; flex-direction: column; gap: 8px;
-  padding: 18px 16px 16px; border-radius: var(--radius); background: var(--bg);
+  position: relative; display: flex; flex-direction: column; gap: 10px;
+  padding: 24px 22px 22px; border-radius: var(--radius); background: var(--bg);
   border: 2px solid var(--line);
   opacity: 0; transform: translateY(14px);
   transition: opacity .5s ease, transform .5s ease, border-color .2s;
@@ -317,10 +317,10 @@ button { font: inherit; color: inherit; }
   align-self: flex-start; font-family: var(--font-pixel); font-size: 12px; padding: 4px 8px;
   background: var(--ink); color: var(--gold); border-radius: 6px;
 }
-.lv-year { font-family: var(--font-pixel); font-size: 28px; line-height: 1; }
-.lv-title { font-weight: 700; margin: 0; }
+.lv-year { font-family: var(--font-pixel); font-size: 30px; line-height: 1; color: var(--peach); }
+.lv-title { font-weight: 700; font-size: 17px; margin: 4px 0 0; }
 .lv-text { margin: 0; font-size: 14px; color: var(--muted); line-height: 1.6; }
-.lv-works { display: flex; flex-wrap: wrap; gap: 8px; margin-top: auto; padding-top: 8px; }
+.lv-works { display: flex; flex-wrap: wrap; gap: 8px; margin-top: auto; padding-top: 14px; }
 .lv-work {
   width: 52px; height: 52px; padding: 0; border-radius: 10px; overflow: hidden; cursor: pointer;
   border: 2px solid var(--line); transition: transform .15s, border-color .15s;
@@ -335,7 +335,7 @@ button { font: inherit; color: inherit; }
 .about-card h2 { font-size: clamp(28px, 3.6vw, 38px); margin: 0 0 12px; }
 .avatar { width: 128px; height: 128px; border-radius: 20px; overflow: hidden; border: 3px solid var(--ink); box-shadow: 5px 5px 0 var(--ink); }
 .avatar img { width: 100%; height: 100%; image-rendering: pixelated; }
-.bio { margin: 0; font-size: 16px; color: var(--ink-2); }
+.bio { margin: 0; font-size: 16px; color: var(--ink-2); white-space: pre-line; }
 .about-side { display: grid; gap: 18px; }
 .info-block { padding: 22px; background: var(--surface); border: 1px solid var(--line); border-radius: 18px; }
 .pixel.small { font-size: 17px; margin: 0 0 14px; }
@@ -363,7 +363,8 @@ button { font: inherit; color: inherit; }
 .contact-art { width: 72px; height: 72px; margin: 0 auto 10px; image-rendering: pixelated; animation: bob 1.6s steps(2) infinite; }
 @keyframes bob { 50% { transform: translateY(-6px); } }
 .contact-links { display: flex; flex-wrap: wrap; justify-content: center; gap: 14px; }
-.contact-item { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; justify-content: center; }
+#copyEmail .copy-ico { opacity: .55; margin-left: 2px; }
+#copyEmail:hover .copy-ico { opacity: 1; }
 
 /* ---------- Footer ---------- */
 .site-footer { padding: 32px 0 48px; color: var(--muted); font-size: 14px; }
@@ -537,10 +538,10 @@ html.penguin-cursor .frame.zoomable { cursor: var(--cur-precision), zoom-in; }
   .card-tags { display: none; }
   .badge { font-size: 10px; padding: 4px 6px; }
   .levels { grid-template-columns: 1fr; }
-  .level { display: grid; grid-template-columns: auto 1fr; column-gap: 14px; }
-  .level > :not(.lv-badge):not(.lv-year) { grid-column: 2; }
-  .lv-badge { grid-column: 1; grid-row: 1; }
-  .lv-year { grid-column: 1; grid-row: 2 / span 2; font-size: 22px; }
+  .level { display: grid; grid-template-columns: auto 1fr; column-gap: 16px; row-gap: 6px; padding: 20px 18px; }
+  .level > :not(.lv-year) { grid-column: 2; }
+  .lv-year { grid-column: 1; grid-row: 1 / span 3; font-size: 24px; padding-top: 2px; }
+  .lv-title { margin: 0; }
   .about-card { grid-template-columns: 1fr; }
   .avatar { width: 96px; height: 96px; }
   .modal { width: 100vw; max-width: 100vw; max-height: 100dvh; height: 100dvh; border-radius: 0; border: 0; box-shadow: none; margin: 0; }

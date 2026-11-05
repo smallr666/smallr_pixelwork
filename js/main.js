@@ -180,7 +180,6 @@
     $("#levels").innerHTML = JOURNEY.map(j => {
       const ws = WORKS.filter(w => w.year === j.year);
       return `<li class="level">
-        <span class="lv-badge">Lv.${j.lv}</span>
         <span class="lv-year">${j.year}</span>
         <h3 class="lv-title">${esc(L(j).title)}</h3>
         <p class="lv-text">${esc(L(j).text)}</p>
