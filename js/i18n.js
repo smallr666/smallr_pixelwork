@@ -1,0 +1,177 @@
+/* 介面文字 UI strings — 修改文案改這裡 Edit copy here */
+window.I18N = {
+  zh: {
+    "meta.title": "SmallR 小R｜像素作品集",
+    "nav.works": "作品",
+    "nav.journey": "升級路線",
+    "nav.about": "關於",
+    "nav.contact": "聯絡",
+    "nav.menu": "選單",
+    "cursor.toggle": "企鵝游標",
+    "cursor.on": "企鵝游標：開",
+    "cursor.off": "企鵝游標：關",
+
+    "hero.kicker": "PIXEL ARTIST · SINCE 2021",
+    "hero.title": "嗨，我是小R",
+    "hero.lead": "我畫像素風格的角色、小動物、遊戲圖示和客製化游標，也會做一點逐格動畫。",
+    "hero.cta": "看作品",
+    "hero.contact": "聯絡我",
+    "hero.tip": "點點企鵝看看",
+    "stat.years": "年",
+    "stat.projects": "個專案",
+    "stat.anims": "段動畫",
+    "stat.cursors": "款游標",
+    "mascot.lines": ["歡迎來玩！", "往下滑有更多作品喔", "我在 2024 年有登場～", "試試右上角的企鵝游標！", "每一格都是手點的", "謝謝你來看！"],
+
+    "featured.kicker": "FEATURED",
+    "featured.title": "精選作品",
+    "featured.open": "查看作品",
+
+    "works.kicker": "ALL WORKS",
+    "works.title": "作品列表",
+    "works.sub": "依類型或年份篩選，點擊卡片查看完整內容、動畫與過程。",
+    "works.year": "年份",
+    "works.allYears": "全部",
+    "works.count": "共 {n} 件",
+    "works.empty": "這個組合目前沒有作品，換個篩選看看吧。",
+    "works.fanart": "二創",
+
+    "journey.kicker": "LEVEL UP",
+    "journey.title": "升級路線",
+    "journey.sub": "從 2021 年的第一隻史萊姆開始，一年一關。",
+
+    "about.kicker": "ABOUT",
+    "about.title": "關於我",
+    "about.bio": "我是小R（SmallR），2021 年開始畫像素風格作品。平常喜歡畫日常小圖標、小動物，也會畫寶可夢和 TemTem 的二創像素插畫，最近還嘗試做了客製化滑鼠游標。希望你會喜歡這些作品！",
+    "about.tools": "使用工具",
+    "about.skills": "擅長項目",
+    "about.skillList": ["Q 版角色", "逐格動畫", "遊戲圖示", "場景插畫", "游標 / UI 素材", "二創插畫"],
+
+    "contact.kicker": "CONTACT",
+    "contact.title": "一起做點什麼吧",
+    "contact.sub": "合作邀約、委託或只是想打聲招呼，都歡迎來信或私訊。",
+    "contact.copy": "複製",
+    "contact.copied": "已複製！",
+
+    "footer.fanart": "寶可夢與 TemTem 相關作品為個人二次創作，角色版權屬原權利人所有。",
+
+    "modal.close": "關閉",
+    "modal.prev": "上一件",
+    "modal.next": "下一件",
+    "modal.year": "年份",
+    "modal.type": "類型",
+    "modal.tools": "工具",
+    "modal.canvas": "畫布",
+    "modal.share": "複製連結",
+    "modal.copied": "已複製連結",
+
+    "player.play": "播放",
+    "player.pause": "暫停",
+    "player.prev": "上一格",
+    "player.next": "下一格",
+    "player.frame": "格",
+    "player.speed": "速度",
+    "player.hint": "可暫停後逐格檢視",
+
+    "layers.hint": "拖曳滑桿，看畫面一層一層疊起來",
+    "layers.explode": "立體拆解",
+    "layers.flat": "回到平面",
+
+    "compare.hint": "從照片到像素：取景、色塊簡化與光線重新整理",
+    "variants.hint": "切換一般與色違版本",
+
+    "cursors.hint": "把滑鼠移到任一格上，就能直接試用那款游標",
+    "cursors.apply": "套用到整個網站",
+    "cursors.remove": "取消套用",
+    "cursors.touch": "手機無法顯示滑鼠游標，請用電腦試玩",
+
+    "zoom.hint": "點圖片可放大"
+  },
+  en: {
+    "meta.title": "SmallR | Pixel Art Portfolio",
+    "nav.works": "Works",
+    "nav.journey": "Journey",
+    "nav.about": "About",
+    "nav.contact": "Contact",
+    "nav.menu": "Menu",
+    "cursor.toggle": "Penguin cursor",
+    "cursor.on": "Penguin cursor: on",
+    "cursor.off": "Penguin cursor: off",
+
+    "hero.kicker": "PIXEL ARTIST · SINCE 2021",
+    "hero.title": "Hi, I'm SmallR",
+    "hero.lead": "I make pixel-art characters, little animals, game icons and custom cursors — plus a bit of frame-by-frame animation.",
+    "hero.cta": "See my work",
+    "hero.contact": "Get in touch",
+    "hero.tip": "Click the penguin",
+    "stat.years": "years",
+    "stat.projects": "projects",
+    "stat.anims": "animations",
+    "stat.cursors": "cursors",
+    "mascot.lines": ["Welcome!", "More work below — scroll on", "I show up in 2024 too~", "Try the penguin cursor up top!", "Every pixel placed by hand", "Thanks for visiting!"],
+
+    "featured.kicker": "FEATURED",
+    "featured.title": "Featured Work",
+    "featured.open": "View project",
+
+    "works.kicker": "ALL WORKS",
+    "works.title": "All Projects",
+    "works.sub": "Filter by type or year. Open any card for animations and process.",
+    "works.year": "Year",
+    "works.allYears": "All",
+    "works.count": "{n} projects",
+    "works.empty": "Nothing matches this combo yet — try another filter.",
+    "works.fanart": "Fan art",
+
+    "journey.kicker": "LEVEL UP",
+    "journey.title": "Journey",
+    "journey.sub": "One level per year, starting with a slime in 2021.",
+
+    "about.kicker": "ABOUT",
+    "about.title": "About Me",
+    "about.bio": "I'm SmallR (小R). I started making pixel art in 2021. I usually draw everyday icons and small animals, plus fan art from Pokémon and Temtem — and lately I've been designing custom mouse cursors too. Hope you enjoy my work!",
+    "about.tools": "Tools",
+    "about.skills": "What I do",
+    "about.skillList": ["Chibi characters", "Frame animation", "Game icons", "Scene illustration", "Cursors / UI assets", "Fan art"],
+
+    "contact.kicker": "CONTACT",
+    "contact.title": "Let's make something",
+    "contact.sub": "Collaborations, commissions, or just saying hi — my inbox and DMs are open.",
+    "contact.copy": "Copy",
+    "contact.copied": "Copied!",
+
+    "footer.fanart": "Pokémon and Temtem pieces are personal fan art; characters belong to their respective owners.",
+
+    "modal.close": "Close",
+    "modal.prev": "Previous",
+    "modal.next": "Next",
+    "modal.year": "Year",
+    "modal.type": "Type",
+    "modal.tools": "Tools",
+    "modal.canvas": "Canvas",
+    "modal.share": "Copy link",
+    "modal.copied": "Link copied",
+
+    "player.play": "Play",
+    "player.pause": "Pause",
+    "player.prev": "Previous frame",
+    "player.next": "Next frame",
+    "player.frame": "Frame",
+    "player.speed": "Speed",
+    "player.hint": "Pause to step through frame by frame",
+
+    "layers.hint": "Drag the slider to stack the layers",
+    "layers.explode": "Explode view",
+    "layers.flat": "Flatten",
+
+    "compare.hint": "Photo to pixels: reframing, simplified colour blocks and relit light",
+    "variants.hint": "Switch between the normal and variant colours",
+
+    "cursors.hint": "Hover any tile to try that cursor right away",
+    "cursors.apply": "Use across the site",
+    "cursors.remove": "Turn off",
+    "cursors.touch": "Touch screens don't show cursors — try this on a computer",
+
+    "zoom.hint": "Tap an image to zoom"
+  }
+};

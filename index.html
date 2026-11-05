@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SmallR 小R｜像素作品集 Pixel Art Portfolio</title>
+  <meta name="description" content="SmallR 小R 的像素作品集：Q 版角色、遊戲圖示、場景、逐格動畫與客製化游標。Pixel art portfolio by SmallR.">
+  <meta name="theme-color" content="#FFF7F1">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="SmallR 小R｜Pixel Art Portfolio">
+  <meta property="og:description" content="Q 版角色、遊戲圖示、場景、逐格動畫與客製化游標。Characters, icons, scenes, animation & custom cursors.">
+  <meta property="og:image" content="assets/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap">
+  <link rel="stylesheet" href="fonts/fusion-pixel/fusion-pixel.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip" href="#works">Skip to works</a>
+
+  <!-- ============ Header ============ -->
+  <header class="site-header" id="top">
+    <div class="wrap header-inner">
+      <a class="logo" href="#top" aria-label="SmallR home">
+        <img src="assets/logo-penguin.png" alt="" width="32" height="32">
+        <span class="logo-text">SmallR <small>小R</small></span>
+      </a>
+
+      <nav class="nav" id="nav" aria-label="Main">
+        <a href="#works" data-i18n="nav.works">作品</a>
+        <a href="#journey" data-i18n="nav.journey">升級路線</a>
+        <a href="#about" data-i18n="nav.about">關於</a>
+        <a href="#contact" data-i18n="nav.contact">聯絡</a>
+      </nav>
+
+      <div class="header-tools">
+        <button class="tool-btn cursor-toggle" id="cursorToggle" type="button" aria-pressed="false">
+          <img src="assets/works/xmas-cursor/01-normal@1x.png" alt="" width="20" height="20">
+          <span class="sr" data-i18n="cursor.toggle">企鵝游標</span>
+        </button>
+        <div class="lang" role="group" aria-label="Language">
+          <button type="button" data-lang="zh" aria-pressed="true">中</button>
+          <button type="button" data-lang="en" aria-pressed="false">EN</button>
+        </div>
+        <button class="tool-btn menu-btn" id="menuBtn" type="button" aria-expanded="false" aria-controls="nav">
+          <span class="burger" aria-hidden="true"></span>
+          <span class="sr" data-i18n="nav.menu">選單</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ============ Hero ============ -->
+    <section class="hero">
+      <div class="wrap hero-inner">
+        <div class="hero-copy">
+          <p class="kicker" data-i18n="hero.kicker">PIXEL ARTIST · SINCE 2021</p>
+          <h1 class="pixel hero-title" data-i18n="hero.title">嗨，我是小R</h1>
+          <p class="lead" data-i18n="hero.lead"></p>
+          <div class="cta-row">
+            <a class="btn btn-primary" href="#works"><span data-i18n="hero.cta">看作品</span> <span aria-hidden="true">↓</span></a>
+            <a class="btn btn-ghost" href="#contact" data-i18n="hero.contact">聯絡我</a>
+          </div>
+          <ul class="stats" id="stats"></ul>
+        </div>
+
+        <div class="hero-stage" aria-hidden="false">
+          <div class="stage">
+            <span class="cloud c1"></span><span class="cloud c2"></span><span class="cloud c3"></span>
+            <span class="spark s1"></span><span class="spark s2"></span><span class="spark s3"></span><span class="spark s4"></span>
+            <button class="mascot" id="mascot" type="button" aria-label="Penguin mascot">
+              <span class="bubble" id="bubble" role="status"></span>
+              <img src="assets/works/emperor-penguin/bounce-alpha.webp" alt="" width="100" height="100">
+            </button>
+            <div class="ground"></div>
+          </div>
+          <p class="stage-tip" data-i18n="hero.tip">點點企鵝看看</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ Featured ============ -->
+    <section class="section featured" aria-labelledby="featured-title">
+      <div class="wrap">
+        <header class="section-head">
+          <p class="kicker" data-i18n="featured.kicker">FEATURED</p>
+          <h2 class="pixel" id="featured-title" data-i18n="featured.title">精選作品</h2>
+        </header>
+        <div class="featured-grid" id="featured"></div>
+      </div>
+    </section>
+
+    <!-- ============ Works ============ -->
+    <section class="section works" id="works" aria-labelledby="works-title">
+      <div class="wrap">
+        <header class="section-head">
+          <p class="kicker" data-i18n="works.kicker">ALL WORKS</p>
+          <h2 class="pixel" id="works-title" data-i18n="works.title">作品列表</h2>
+          <p class="section-sub" data-i18n="works.sub"></p>
+        </header>
+
+        <div class="filters">
+          <div class="chips" id="catChips" role="toolbar" aria-label="Category"></div>
+          <div class="year-filter">
+            <span class="year-label" data-i18n="works.year">年份</span>
+            <div class="seg" id="yearSeg" role="toolbar" aria-label="Year"></div>
+          </div>
+        </div>
+        <p class="result-count" id="resultCount" aria-live="polite"></p>
+        <div class="grid" id="grid"></div>
+        <p class="empty" id="empty" hidden data-i18n="works.empty"></p>
+      </div>
+    </section>
+
+    <!-- ============ Journey ============ -->
+    <section class="section journey" id="journey" aria-labelledby="journey-title">
+      <div class="wrap">
+        <header class="section-head">
+          <p class="kicker" data-i18n="journey.kicker">LEVEL UP</p>
+          <h2 class="pixel" id="journey-title" data-i18n="journey.title">升級路線</h2>
+          <p class="section-sub" data-i18n="journey.sub"></p>
+        </header>
+        <div class="xp" aria-hidden="true"><span class="xp-fill" id="xpFill"></span></div>
+        <ol class="levels" id="levels"></ol>
+      </div>
+    </section>
+
+    <!-- ============ About ============ -->
+    <section class="section about" id="about" aria-labelledby="about-title">
+      <div class="wrap about-inner">
+        <div class="about-card">
+          <div class="avatar">
+            <img src="assets/works/little-penguin/light.png" alt="" width="90" height="90">
+          </div>
+          <div>
+            <p class="kicker" data-i18n="about.kicker">ABOUT</p>
+            <h2 class="pixel" id="about-title" data-i18n="about.title">關於我</h2>
+            <p class="bio" data-i18n="about.bio"></p>
+          </div>
+        </div>
+        <div class="about-side">
+          <div class="info-block">
+            <h3 class="pixel small" data-i18n="about.tools">使用工具</h3>
+            <ul class="tools">
+              <li><span class="tool-ico">Ase</span>Aseprite</li>
+              <li><span class="tool-ico ps">Ps</span>Photoshop</li>
+            </ul>
+          </div>
+          <div class="info-block">
+            <h3 class="pixel small" data-i18n="about.skills">擅長項目</h3>
+            <ul class="tags" id="skillList"></ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ Contact ============ -->
+    <section class="section contact" id="contact" aria-labelledby="contact-title">
+      <div class="wrap">
+        <div class="contact-card">
+          <img class="contact-art" src="assets/works/xmas-cursor/14-link@1x.png" alt="" width="64" height="64">
+          <p class="kicker" data-i18n="contact.kicker">CONTACT</p>
+          <h2 class="pixel" id="contact-title" data-i18n="contact.title">一起做點什麼吧</h2>
+          <p class="section-sub" data-i18n="contact.sub"></p>
+          <div class="contact-links">
+            <div class="contact-item">
+              <a class="btn btn-primary" href="mailto:redgreen1229@gmail.com">
+                <svg viewBox="0 0 16 16" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M1 3h14v10H1zM2 4v.6l6 4 6-4V4zm0 1.8V12h12V5.8l-6 4z"/></svg>
+                redgreen1229@gmail.com
+              </a>
+              <button class="btn btn-ghost btn-sm" type="button" id="copyEmail" data-i18n="contact.copy">複製</button>
+            </div>
+            <a class="btn btn-ghost" href="https://www.instagram.com/small__r" target="_blank" rel="noopener">
+              <svg viewBox="0 0 16 16" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M3 1h10l2 2v10l-2 2H3l-2-2V3zm0 2v10h10V3zm5 2a3 3 0 110 6 3 3 0 010-6zm0 1.5a1.5 1.5 0 100 3 1.5 1.5 0 000-3zM11.5 4a.8.8 0 110 1.6.8.8 0 010-1.6z"/></svg>
+              @small__r
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <p>© <span id="year"></span> SmallR 小R</p>
+      <p class="fine" data-i18n="footer.fanart"></p>
+    </div>
+  </footer>
+
+  <!-- ============ Work detail ============ -->
+  <dialog class="modal" id="modal" aria-labelledby="modalTitle">
+    <div class="modal-inner" tabindex="-1">
+      <header class="modal-head">
+        <div class="modal-title-wrap">
+          <p class="modal-meta" id="modalMeta"></p>
+          <h2 class="pixel" id="modalTitle"></h2>
+        </div>
+        <div class="modal-actions">
+          <button class="icon-btn" type="button" id="modalPrev" data-i18n-label="modal.prev">‹</button>
+          <button class="icon-btn" type="button" id="modalNext" data-i18n-label="modal.next">›</button>
+          <button class="icon-btn" type="button" id="modalClose" data-i18n-label="modal.close">✕</button>
+        </div>
+      </header>
+      <div class="modal-body">
+        <div class="modal-media" id="modalMedia"></div>
+        <aside class="modal-info" id="modalInfo"></aside>
+      </div>
+    </div>
+  </dialog>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="js/i18n.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
