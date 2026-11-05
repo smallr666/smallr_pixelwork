@@ -343,6 +343,7 @@ button { font: inherit; color: inherit; }
 .tools li { display: flex; align-items: center; gap: 12px; font-weight: 500; }
 .tool-ico { display: grid; place-items: center; width: 36px; height: 36px; border-radius: 8px; background: #7D929E; color: #fff; font-family: var(--font-pixel); font-size: 12px; }
 .tool-ico.ps { background: #001E36; color: #31A8FF; font-size: 15px; }
+.tool-ico.anifx { background: var(--sky); color: #fff; font-size: 14px; }
 .tags { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: 8px; }
 .tags li { padding: 6px 12px; border-radius: 999px; background: var(--bg-2); font-size: 14px; }
 

@@ -259,7 +259,7 @@
     const info = [
       [t("modal.year"), w.year],
       [t("modal.type"), w.cats.map(catName).join(lang === "zh" ? "、" : ", ")],
-      [t("modal.tools"), "Aseprite / Photoshop"],
+      w.tools ? [t("modal.tools"), w.tools.join(" / ")] : null,
       w.canvas ? [t("modal.canvas"), w.canvas] : null
     ].filter(Boolean);
     $("#modalInfo").innerHTML = `

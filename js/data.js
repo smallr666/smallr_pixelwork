@@ -34,6 +34,7 @@ const W = "assets/works/";
 window.WORKS = [
   {
     id: "slime", year: 2021, cats: ["character", "animation"],
+    tools: ["Aseprite"],
     bg: "#FBD5C4",
     title: { zh: "史萊姆", en: "Slime" },
     desc: { zh: "初次嘗試像素作品，之後試著讓他跳躍", en: "My very first pixel piece — later I tried making it jump." },
@@ -48,6 +49,7 @@ window.WORKS = [
   },
   {
     id: "items", year: 2021, cats: ["asset"],
+    tools: ["Photoshop"],
     bg: "#F8B6A0",
     title: { zh: "像素物件系列", en: "Pixel Item Set" },
     desc: { zh: "日常物件與遊戲道具的圖示練習，分成食物點心、植物、武器工具三組", en: "Icon practice for everyday objects and game items, grouped into food, plants and tools." },
@@ -62,6 +64,7 @@ window.WORKS = [
   },
   {
     id: "little-penguin", year: 2022, cats: ["character"],
+    tools: ["Aseprite"],
     bg: "#FDE6D3",
     title: { zh: "小企鵝 The Light", en: "Little Penguin · The Light" },
     desc: { zh: "女友的生日插畫", en: "A birthday illustration for my girlfriend." },
@@ -73,6 +76,7 @@ window.WORKS = [
   },
   {
     id: "seascape", year: 2022, cats: ["scene"],
+    tools: ["Photoshop"],
     bg: "#1D2A35",
     title: { zh: "海景 Pixel Art Sunset", en: "Pixel Art Sunset" },
     desc: { zh: "依照一張我用手機拍的照片繪製的像素插畫，過程困難但也很有樂趣", en: "Based on a photo I took on my phone. Tricky to paint, but a lot of fun." },
@@ -86,6 +90,7 @@ window.WORKS = [
   },
   {
     id: "cat-island", year: 2022, cats: ["scene"],
+    tools: ["Aseprite"],
     bg: "#FFD49C",
     title: { zh: "貓咪島", en: "Cat Island" },
     desc: { zh: "等角視角的漂浮小島，練習方塊地形、水面與光影", en: "A floating isometric island — practice in block terrain, water and light." },
@@ -97,6 +102,7 @@ window.WORKS = [
   },
   {
     id: "miraidon", year: 2022, cats: ["fanart", "character"], fanart: true,
+    tools: ["Aseprite"],
     bg: "#A98AE2",
     title: { zh: "寶可夢紫版・密勒頓", en: "Pokémon Violet · Miraidon" },
     desc: { zh: "當時玩寶可夢朱紫很瘋，特地畫了一張來慶祝通關", en: "I was hooked on Pokémon Scarlet & Violet, so I drew this to celebrate beating the game." },
@@ -119,6 +125,7 @@ window.WORKS = [
   },
   {
     id: "mimit", year: 2023, cats: ["fanart", "character", "animation"], fanart: true,
+    tools: ["Aseprite"],
     bg: "#E2C6B6",
     title: { zh: "TemTem #001 Mimit", en: "Temtem #001 Mimit" },
     desc: { zh: "覺得遊戲概念很有趣，嘗試把裡面的生物轉成像素風格", en: "I loved the game's concept, so I tried turning one of its creatures into pixel art." },
@@ -142,6 +149,7 @@ window.WORKS = [
   },
   {
     id: "emperor-penguin", year: 2024, cats: ["character", "animation"],
+    tools: ["Aseprite"],
     bg: "#3AAEE6",
     title: { zh: "皇帝企鵝寶寶", en: "Emperor Penguin Chick" },
     desc: { zh: "女友的生日插畫 2，這次做了很多畫面前後層次與動畫的嘗試，整體來說很滿意", en: "Birthday illustration no. 2. I experimented a lot with foreground/background depth and animation — really happy with how it turned out." },
@@ -158,6 +166,7 @@ window.WORKS = [
   },
   {
     id: "xmas-cursor", year: 2025, cats: ["ui", "asset", "character"],
+    tools: ["AniFX"],
     bg: "#E6F3FB",
     title: { zh: "聖誕企鵝鼠標", en: "Christmas Penguin Cursors" },
     desc: { zh: "受女友委託的客製化鼠標，我到現在自己也還在用，覺得不錯", en: "Custom cursors commissioned by my girlfriend. I still use them myself — they hold up well." },
